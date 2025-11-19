@@ -58,7 +58,7 @@ router.get('/verify/:id', async (req, res) => {
     }
 
     // Redirect to frontend success page
-    res.redirect(`${process.env.FRONTEND_URL}/donation/success?donationId=${donation._id}`);
+    res.redirect(`https://angie-plp-final-project.vercel.app/donation/success?donationId=${donation._id}`);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
