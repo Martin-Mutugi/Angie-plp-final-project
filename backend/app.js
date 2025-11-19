@@ -19,14 +19,13 @@ const app = express();
 
 app.set('trust proxy', 1);
 
-
 // Security middleware
 app.use(helmet());
 app.use(cors({
   origin: function (origin, callback) {
     const allowedOrigins = [
       'http://localhost:5173',
-      'https://your-vercel-app.vercel.app' // We'll update this with your actual Vercel URL later
+      'https://angie-plp-final-project.vercel.app' // Your actual Vercel URL
     ];
     
     // Allow requests with no origin (like mobile apps or curl requests)
