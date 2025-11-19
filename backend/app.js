@@ -24,7 +24,7 @@ app.use(helmet());
 app.use(cors({
   origin: function (origin, callback) {
     const allowedOrigins = [
-      'http://localhost:5173',
+      'https://angie-plp-final-project.vercel.app',
       'https://angie-plp-final-project.vercel.app' // Your actual Vercel URL
     ];
     

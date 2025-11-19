@@ -57,7 +57,7 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PAYSTACK_SECRET_KEY=your_paystack_secret_key
 PAYSTACK_PUBLIC_KEY=your_paystack_public_key
-FRONTEND_URL=http://localhost:5173
+FRONTEND_URL=https://angie-plp-final-project.vercel.app
 APP_URL=http://localhost:5000
 ```
 
