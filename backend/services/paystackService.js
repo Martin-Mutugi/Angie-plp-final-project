@@ -49,7 +49,7 @@ class PaystackService {
         amount: donationData.amount * 100,
         currency: donationData.currency,
         reference: donationData.paystackRef,
-        callback_url: `${process.env.APP_URL}/api/donations/verify/${donationData._id}`,
+        callback_url: `https://sdg-donations-backend.onrender.com/api/donations/verify/${donationData._id}`,
         metadata: {
           donation_id: donationData._id.toString(),
           type: donationData.type
