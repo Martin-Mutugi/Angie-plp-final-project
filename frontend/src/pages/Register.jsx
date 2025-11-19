@@ -45,11 +45,11 @@ const Register = ({ setUser }) => {
     
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const response = await axios.post('https://sdg-donations-backend.onrender.com/api/auth/register', formData);
       console.log('User created:', response.data);
       
       // Auto-login after successful registration
-      const loginResponse = await axios.post('http://localhost:5000/api/auth/login', {
+      const loginResponse = await axios.post('https://sdg-donations-backend.onrender.com/api/auth/login', {
         email: formData.email,
         password: formData.password
       });

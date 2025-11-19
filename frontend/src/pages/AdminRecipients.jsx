@@ -20,7 +20,7 @@ const AdminRecipients = ({ user }) => {
   const fetchRecipients = async () => {
     setIsFetching(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/recipients');
+      const response = await axios.get('https://sdg-donations-backend.onrender.com/api/recipients');
       setRecipients(response.data);
     } catch (error) {
       console.error('Error fetching recipients:', error);
@@ -36,7 +36,7 @@ const AdminRecipients = ({ user }) => {
     
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/recipients', formData, {
+      await axios.post('https://sdg-donations-backend.onrender.com/api/recipients', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert('Recipient added successfully!');

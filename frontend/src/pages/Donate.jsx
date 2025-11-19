@@ -19,7 +19,7 @@ const Donate = ({ user }) => {
     const fetchRecipients = async () => {
       setIsFetchingRecipients(true);
       try {
-        const response = await axios.get('http://localhost:5000/api/recipients');
+        const response = await axios.get('https://sdg-donations-backend.onrender.com/api/recipients');
         setRecipients(response.data);
       } catch (error) {
         console.error('Error fetching recipients:', error);
@@ -36,7 +36,7 @@ const Donate = ({ user }) => {
     setIsLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:5000/api/donations/init', formData);
+      const response = await axios.post('https://sdg-donations-backend.onrender.com/api/donations/init', formData);
       console.log('Full response:', response.data);
       
       // Check for both possible authorization URL keys

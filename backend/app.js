@@ -17,6 +17,9 @@ import allocationRoutes from './routes/allocations.js';
 
 const app = express();
 
+app.set('trust proxy', 1);
+
+
 // Security middleware
 app.use(helmet());
 app.use(cors({
