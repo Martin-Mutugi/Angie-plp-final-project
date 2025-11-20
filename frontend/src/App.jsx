@@ -15,6 +15,30 @@ import './App.css';
 function App() {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentTheme, setCurrentTheme] = useState('light');
+
+  const themes = {
+    light: {
+      name: 'Light',
+      icon: '☀️',
+      className: 'theme-light'
+    },
+    dark: {
+      name: 'Dark', 
+      icon: '🌙',
+      className: 'theme-dark'
+    },
+    blue: {
+      name: 'Ocean',
+      icon: '🌊',
+      className: 'theme-blue'
+    },
+    green: {
+      name: 'Forest',
+      icon: '🌿',
+      className: 'theme-green'
+    }
+  };
 
   useEffect(() => {
     // Check for existing authentication
@@ -44,6 +68,13 @@ function App() {
     setUser(null);
   };
 
+  const toggleTheme = () => {
+    const themeKeys = Object.keys(themes);
+    const currentIndex = themeKeys.indexOf(currentTheme);
+    const nextIndex = (currentIndex + 1) % themeKeys.length;
+    setCurrentTheme(themeKeys[nextIndex]);
+  };
+
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -54,7 +85,19 @@ function App() {
 
   return (
     <Router>
-      <div className="app-container min-h-screen bg-neutral-50">
+      <div className={`app-container min-h-screen ${themes[currentTheme].className}`}>
+        {/* Theme Toggle Button */}
+        <div className="fixed top-4 right-4 z-50">
+          <button
+            onClick={toggleTheme}
+            className="btn btn-primary btn-sm flex items-center gap-2 shadow-lg"
+            title={`Current theme: ${themes[currentTheme].name}`}
+          >
+            <span>{themes[currentTheme].icon}</span>
+            <span className="hidden sm:inline">{themes[currentTheme].name}</span>
+          </button>
+        </div>
+
         {/* Premium Navigation - Using Navbar Component */}
         <Navbar user={user} onLogout={handleLogout} />
 
