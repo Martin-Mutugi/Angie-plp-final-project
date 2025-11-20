@@ -64,7 +64,7 @@ html {
       rgba(248, 250, 252, 0.82)
     ),
     /* Your beautiful background image */
-    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
+    url('https://images.pexels.com/photos/30179910/pexels-photo-30179910.jpeg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -629,7 +629,7 @@ h4, .h4 {
       rgba(15, 23, 42, 0.88),
       rgba(15, 23, 42, 0.88)
     ),
-    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
+    url('https://images.pexels.com/photos/30179910/pexels-photo-30179910.jpeg');
 }
 
 .theme-blue .app-container {
@@ -638,7 +638,7 @@ h4, .h4 {
       rgba(240, 249, 255, 0.85),
       rgba(240, 249, 255, 0.85)
     ),
-    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
+    url('https://images.pexels.com/photos/30179910/pexels-photo-30179910.jpeg');
 }
 
 .theme-green .app-container {
@@ -647,7 +647,7 @@ h4, .h4 {
       rgba(247, 254, 231, 0.85),
       rgba(247, 254, 231, 0.85)
     ),
-    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
+    url('https://images.pexels.com/photos/30179910/pexels-photo-30179910.jpeg');
 }
 
 .theme-light .app-container {
@@ -656,7 +656,7 @@ h4, .h4 {
       rgba(248, 250, 252, 0.82),
       rgba(248, 250, 252, 0.82)
     ),
-    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
+    url('https://images.pexels.com/photos/30179910/pexels-photo-30179910.jpeg');
 }
 
 /* Smooth theme transitions */
