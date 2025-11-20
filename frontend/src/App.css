@@ -55,21 +55,21 @@ html {
 }
 
 /* Premium Background System */
+/* Premium Background System */
 .app-container {
   min-height: 100vh;
   background: 
-    /* Subtle gradient overlay */
+    /* Soft overlay to ensure readability */
     linear-gradient(
-      135deg,
-      rgba(248, 250, 252, 0.98) 0%,
-      rgba(241, 245, 249, 0.98) 50%,
-      rgba(248, 250, 252, 0.98) 100%
+      rgba(248, 250, 252, 0.92),
+      rgba(248, 250, 252, 0.92)
     ),
-    /* Geometric pattern */
-    url('data:image/svg+xml,<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23f1f5f9" stop-opacity="0.3"/><stop offset="100%" stop-color="%23e2e8f0" stop-opacity="0.1"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="2" fill="url(%23grad)"/><circle cx="60" cy="60" r="1.5" fill="url(%23grad)"/><circle cx="100" cy="100" r="2" fill="url(%23grad)"/><circle cx="100" cy="20" r="1.5" fill="url(%23grad)"/><circle cx="20" cy="100" r="2" fill="url(%23grad)"/></g></svg>');
+    /* Your beautiful background image */
+    url('https://images.pexels.com/photos/5461586/pexels-photo-5461586.jpeg');
   background-attachment: fixed;
-  background-size: 120px 120px;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 body {
